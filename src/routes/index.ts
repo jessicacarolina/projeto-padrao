@@ -1,9 +1,8 @@
 import { Router } from 'express';
+import teste from './teste.routes';
 
 const routes = Router();
 
-routes.get('/', (request, response) =>
-    response.json({ message: 'Hello World' }),
-);
+routes.use('/teste', teste);
 
 export default routes;
